@@ -2,6 +2,8 @@
 
 Wordle clone in GoLang
 
+Type "go run main.go" in the termain to start the app.
+
 On startup, the game selects a random five letter word from its dictionary.
 User will have 6 tries to guess this word.
 
