@@ -1,6 +1,6 @@
 # Gordle
 
-Wordle clone in GoLang
+A Wordle clone in GoLang
 
 Type "go run main.go" in the terminal to start the app.
 
