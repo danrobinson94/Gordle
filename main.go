@@ -167,32 +167,21 @@ func main() {
 								// See how many of the duplicate letters in user input are actually duplicates
 								// In the chosen word
 								correctDuplicates := strings.Count(chosenWord, attemptLetters[i])
+								// Checks to see if any attempted letters should
+								// made yellow, making sure to not change any green letters to yellow.
+								// This will need to be simplified in the future
 								if contains(correctLetters, attemptLetters[i]) && 
 									letterColors[i].color != "GREEN" &&
-									// Check if the attempted letter is not in the list of duplicate letters
 									((!contains(duplicateLetters, attemptLetters[i]) && 
-									// And if an identical letter has already been made yellow
 									!contains(yellowsAdded, attemptLetters[i])) ||
-									// OR if the letter is in our list of duplicate green letters the user 
-									// has entered
 									(contains(duplicateGreenLetters, attemptLetters[i]) &&
-									// And if the letter is in our list of duplicate letters
 									contains(duplicateLetters, attemptLetters[i])) || 
-									// OR if the letter is not in our list of previous duplicate green letters
 									(!contains(duplicateGreenLetters, attemptLetters[i]) && 
-									// And it is not in the list of letters already made yellow
 									!contains(yellowsAdded, attemptLetters[i])) &&
-									// And if the amount of green letters is less than the amount of
-									// Duplicates in the correctWord
 									strings.Count(greenLetters, attemptLetters[i]) < correctDuplicates &&
-									// And as a safeguard check to make sure it isn't already green again
 									letterColors[i].color != "GREEN") ||
-									// OR if the letter is a correct letter
 									((contains(correctLetters, attemptLetters[i]) && 
-									// And it isn't in the list of yellows already added
 									!contains(yellowsAdded, attemptLetters[i])) &&
-									// And the amount of green letters is less than the amount of 
-									// Duplicate letters in the correctWord
 									strings.Count(greenLetters, attemptLetters[i]) < correctDuplicates &&
 									letterColors[i].color != "GREEN") {
 										// Now we can make the letter yellow
