@@ -18,7 +18,7 @@ Grey letters - Incorrect letters, not found in the winning word.
 If you've guessed a word before, you won't be allowed to guess it again, to keep you
 from wasting guesses.
 
-If you guess a word not in the game's dictionary, you will another try.
+If you guess a word not in the game's dictionary, you get to keep trying.
 
 After 6 unsuccessful attempts you lose and the game will close automatically.
 
