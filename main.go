@@ -252,7 +252,7 @@ func main() {
 	// If the user attempts 6 times without winning and triggering the exit code, display the following
 	fmt.Println("WELL... ALMOST")
 	fmt.Println("------")	
-	for i := 0; i < 75; i++ {
+	for i := 0; i < 15; i++ {
 		fmt.Println("YOU LOSE I WIN")
 	}
 	fmt.Println("-------")
