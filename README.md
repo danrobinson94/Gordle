@@ -7,6 +7,8 @@ Type "go run main.go" in the terminal to start the app.
 On startup, the game selects a random five letter word from its dictionary.
 User will have 6 tries to guess this word.
 
+The app currently displays the correct word after each attempt to help with code review.
+
 After each attempt, the game gives you feedback on the letters from your word:
 
 Green letters - Correct letters in the correct place.
